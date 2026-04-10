@@ -214,9 +214,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <div className="flex-1 min-w-0 max-w-3xl">
             {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-xs text-gray-400 mb-6">
-              <Link href="/" className="hover:text-[#C9A84C] transition-colors">Home</Link>
+              <Link href="/" className="hover:text-[#D4A843] transition-colors">Home</Link>
               <span>/</span>
-              <Link href="/articles" className="hover:text-[#C9A84C] transition-colors">Articles</Link>
+              <Link href="/articles" className="hover:text-[#D4A843] transition-colors">Articles</Link>
               <span>/</span>
               <span className="text-gray-600 truncate">{article.title}</span>
             </nav>
@@ -235,7 +235,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
             {/* Title */}
             <h1
-              className="text-3xl sm:text-4xl font-bold text-[#0F1E3D] leading-tight mb-6"
+              className="text-3xl sm:text-4xl font-bold text-[#1A1A2E] leading-tight mb-6"
               style={{ fontFamily: "var(--font-playfair, Georgia, serif)" }}
             >
               {article.title}
@@ -243,7 +243,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
             {/* Excerpt */}
             {article.excerpt && (
-              <p className="text-lg text-gray-500 leading-relaxed mb-8 border-l-4 border-[#C9A84C] pl-4">
+              <p className="text-lg text-gray-500 leading-relaxed mb-8 border-l-4 border-[#D4A843] pl-4">
                 {article.excerpt}
               </p>
             )}
@@ -293,10 +293,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
             {/* Affiliate CTA */}
             {article.affiliateLink && (
-              <div className="mt-10 bg-[#0F1E3D] rounded-xl p-6 sm:p-8 text-white">
+              <div className="mt-10 bg-[#1A1A2E] rounded-xl p-6 sm:p-8 text-white">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   <div>
-                    <p className="text-[#C9A84C] text-xs font-semibold uppercase tracking-wider mb-1">
+                    <p className="text-[#D4A843] text-xs font-semibold uppercase tracking-wider mb-1">
                       Recommended Card
                     </p>
                     <h3
@@ -334,7 +334,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               {/* Related quick links */}
               {related.length > 0 && (
                 <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
-                  <h3 className="font-bold text-[#0F1E3D] text-sm uppercase tracking-wider mb-4">
+                  <h3 className="font-bold text-[#1A1A2E] text-sm uppercase tracking-wider mb-4">
                     Related Articles
                   </h3>
                   <ul className="space-y-3">
@@ -342,7 +342,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                       <li key={rel._id}>
                         <Link
                           href={`/articles/${rel.slug.current}`}
-                          className="text-sm text-gray-600 hover:text-[#C9A84C] transition-colors leading-snug block"
+                          className="text-sm text-gray-600 hover:text-[#D4A843] transition-colors leading-snug block"
                         >
                           {rel.title}
                         </Link>
@@ -359,7 +359,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         {related.length > 0 && (
           <section className="mt-16 pt-10 border-t border-gray-100">
             <h2
-              className="text-2xl font-bold text-[#0F1E3D] mb-6"
+              className="text-2xl font-bold text-[#1A1A2E] mb-6"
               style={{ fontFamily: "var(--font-playfair, Georgia, serif)" }}
             >
               More {article.category} Articles

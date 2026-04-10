@@ -164,7 +164,7 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-[#0F1E3D] text-white overflow-hidden">
+      <section className="relative bg-[#1A1A2E] text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600&h=700&fit=crop"
@@ -174,14 +174,14 @@ export default async function HomePage() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0F1E3D]/80 via-[#0F1E3D]/60 to-[#0F1E3D]/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1A1A2E]/80 via-[#1A1A2E]/60 to-[#1A1A2E]/40" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-[#C9A84C]/20 border border-[#C9A84C]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="w-2 h-2 rounded-full bg-[#C9A84C]" />
-              <span className="text-[#C9A84C] text-xs font-semibold tracking-wide uppercase">
+            <div className="inline-flex items-center gap-2 bg-[#D4A843]/20 border border-[#D4A843]/30 rounded-full px-4 py-1.5 mb-6">
+              <span className="w-2 h-2 rounded-full bg-[#D4A843]" />
+              <span className="text-[#D4A843] text-xs font-semibold tracking-wide uppercase">
                 Travel Rewards Expert
               </span>
             </div>
@@ -200,7 +200,7 @@ export default async function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/articles"
-                className="inline-flex items-center justify-center gap-2 bg-[#C9A84C] text-[#0F1E3D] font-bold px-8 py-3.5 rounded-lg hover:bg-[#E8C97A] transition-colors shadow-lg"
+                className="inline-flex items-center justify-center gap-2 bg-[#2D7DD2] text-white font-bold px-8 py-3.5 rounded-lg hover:bg-[#1A5FA8] transition-colors shadow-lg"
               >
                 Explore Articles
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -209,7 +209,7 @@ export default async function HomePage() {
               </Link>
               <Link
                 href="/articles?category=Beginners"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white font-semibold px-8 py-3.5 rounded-lg hover:border-[#C9A84C] hover:text-[#C9A84C] transition-colors"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white font-semibold px-8 py-3.5 rounded-lg hover:border-[#D4A843] hover:text-[#D4A843] transition-colors"
               >
                 New to Points?
               </Link>
@@ -230,11 +230,11 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-8">
             <div>
-              <p className="text-[#C9A84C] text-sm font-semibold uppercase tracking-wider mb-1">
+              <p className="text-[#D4A843] text-sm font-semibold uppercase tracking-wider mb-1">
                 Editor&apos;s Picks
               </p>
               <h2
-                className="text-3xl font-bold text-[#0F1E3D]"
+                className="text-3xl font-bold text-[#1A1A2E]"
                 style={{ fontFamily: "var(--font-playfair, Georgia, serif)" }}
               >
                 Top Travel Cards Right Now
@@ -242,7 +242,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/articles?category=Travel"
-              className="hidden sm:inline-flex items-center gap-1 text-sm text-[#C9A84C] font-semibold hover:underline"
+              className="hidden sm:inline-flex items-center gap-1 text-sm text-[#D4A843] font-semibold hover:underline"
             >
               View all picks
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -264,11 +264,11 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-8">
             <div>
-              <p className="text-[#C9A84C] text-sm font-semibold uppercase tracking-wider mb-1">
+              <p className="text-[#D4A843] text-sm font-semibold uppercase tracking-wider mb-1">
                 Latest Guides
               </p>
               <h2
-                className="text-3xl font-bold text-[#0F1E3D]"
+                className="text-3xl font-bold text-[#1A1A2E]"
                 style={{ fontFamily: "var(--font-playfair, Georgia, serif)" }}
               >
                 Featured Articles
@@ -276,7 +276,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/articles"
-              className="hidden sm:inline-flex items-center gap-1 text-sm text-[#C9A84C] font-semibold hover:underline"
+              className="hidden sm:inline-flex items-center gap-1 text-sm text-[#D4A843] font-semibold hover:underline"
             >
               All articles
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -294,7 +294,7 @@ export default async function HomePage() {
           <div className="mt-10 text-center">
             <Link
               href="/articles"
-              className="inline-flex items-center gap-2 bg-[#0F1E3D] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#1a3a6e] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#1A1A2E] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#1a3a6e] transition-colors"
             >
               View All Articles
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -322,7 +322,7 @@ function CardPickCard({ card }: { card: CardPick }) {
 
   return (
     <div className="snap-start shrink-0 w-72 sm:w-auto bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
-      <div className="relative h-40 bg-gradient-to-br from-[#0F1E3D] to-[#1a3a6e] flex items-center justify-center">
+      <div className="relative h-40 bg-gradient-to-br from-[#1A1A2E] to-[#1a3a6e] flex items-center justify-center">
         {imageUrl ? (
           <Image
             src={imageUrl}
@@ -333,8 +333,8 @@ function CardPickCard({ card }: { card: CardPick }) {
           />
         ) : (
           <div className="text-center px-4">
-            <div className="w-16 h-10 bg-[#C9A84C]/20 border border-[#C9A84C]/30 rounded-md mx-auto mb-2 flex items-center justify-center">
-              <svg className="w-8 h-5 text-[#C9A84C]/60" viewBox="0 0 32 20" fill="currentColor">
+            <div className="w-16 h-10 bg-[#D4A843]/20 border border-[#D4A843]/30 rounded-md mx-auto mb-2 flex items-center justify-center">
+              <svg className="w-8 h-5 text-[#D4A843]/60" viewBox="0 0 32 20" fill="currentColor">
                 <rect width="32" height="20" rx="3" opacity="0.3" />
                 <rect x="2" y="7" width="8" height="6" rx="1" opacity="0.6" />
               </svg>
@@ -343,14 +343,14 @@ function CardPickCard({ card }: { card: CardPick }) {
           </div>
         )}
         {card.featured && (
-          <div className="absolute top-2 right-2 bg-[#C9A84C] text-[#0F1E3D] text-xs font-bold px-2 py-0.5 rounded-full">
+          <div className="absolute top-2 right-2 bg-[#D4A843] text-[#1A1A2E] text-xs font-bold px-2 py-0.5 rounded-full">
             Top Pick
           </div>
         )}
       </div>
 
       <div className="p-5 flex flex-col flex-1">
-        <h3 className="font-bold text-[#0F1E3D] text-sm leading-tight mb-1">
+        <h3 className="font-bold text-[#1A1A2E] text-sm leading-tight mb-1">
           {card.cardName}
         </h3>
         <p className="text-xs text-gray-400 mb-3">{card.issuer}</p>

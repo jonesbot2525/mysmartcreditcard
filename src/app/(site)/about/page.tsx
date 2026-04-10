@@ -12,16 +12,16 @@ export default function AboutPage() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
       {/* Header */}
       <div className="mb-10">
-        <p className="text-[#C9A84C] text-sm font-semibold uppercase tracking-wider mb-2">
+        <p className="text-[#D4A843] text-sm font-semibold uppercase tracking-wider mb-2">
           Our Story
         </p>
         <h1
-          className="text-4xl font-bold text-[#0F1E3D] mb-4"
+          className="text-4xl font-bold text-[#1A1A2E] mb-4"
           style={{ fontFamily: "var(--font-playfair, Georgia, serif)" }}
         >
           About mySmartCreditCard
         </h1>
-        <div className="h-1 w-16 bg-[#C9A84C] rounded" />
+        <div className="h-1 w-16 bg-[#D4A843] rounded" />
       </div>
 
       {/* Top Ad */}
@@ -69,7 +69,7 @@ export default function AboutPage() {
         <h2>A Note on Affiliate Links</h2>
         <p>
           Like most financial content sites, we use affiliate links to cards we cover. This helps keep the lights on and lets us continue publishing free content. We only recommend cards we&apos;d genuinely consider for our own wallets. For full details, see our{" "}
-          <a href="/disclaimer" className="text-[#C9A84C] underline hover:text-[#0F1E3D]">
+          <a href="/disclaimer" className="text-[#D4A843] underline hover:text-[#1A1A2E]">
             Affiliate Disclaimer
           </a>
           .

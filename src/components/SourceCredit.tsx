@@ -15,7 +15,7 @@ export default function SourceCredit({ sourceTitle, sourceUrl }: SourceCreditPro
             href={sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#C9A84C] hover:underline hover:text-[#0F1E3D] transition-colors"
+            className="text-[#D4A843] hover:underline hover:text-[#1A1A2E] transition-colors"
           >
             {sourceTitle ?? sourceUrl}
           </a>

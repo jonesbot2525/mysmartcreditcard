@@ -18,9 +18,9 @@ export default function AffiliateButton({
 
   const styles = {
     primary:
-      "bg-[#C9A84C] text-[#0F1E3D] hover:bg-[#E8C97A] focus:ring-[#C9A84C] shadow-md hover:shadow-lg",
+      "bg-[#2D7DD2] text-white hover:bg-[#1A5FA8] focus:ring-[#2D7DD2] shadow-md hover:shadow-lg",
     secondary:
-      "border-2 border-[#C9A84C] text-[#C9A84C] hover:bg-[#C9A84C] hover:text-[#0F1E3D] focus:ring-[#C9A84C]",
+      "border-2 border-[#2D7DD2] text-[#2D7DD2] hover:bg-[#2D7DD2] hover:text-white focus:ring-[#2D7DD2]",
   };
 
   return (

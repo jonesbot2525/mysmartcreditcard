@@ -142,9 +142,9 @@ export default async function ArticlesPage({ searchParams }: ArticlesPageProps) 
   return (
     <div className="min-h-screen">
       {/* Page Header */}
-      <div className="bg-[#0F1E3D] text-white py-14">
+      <div className="bg-[#1A1A2E] text-white py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-[#C9A84C] text-sm font-semibold uppercase tracking-wider mb-2">
+          <p className="text-[#D4A843] text-sm font-semibold uppercase tracking-wider mb-2">
             Knowledge Base
           </p>
           <h1
@@ -179,8 +179,8 @@ export default async function ArticlesPage({ searchParams }: ArticlesPageProps) 
                   href={cat === "All" ? "/articles" : `/articles?category=${cat}`}
                   className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors border ${
                     activeCategory === cat
-                      ? "bg-[#0F1E3D] text-white border-[#0F1E3D]"
-                      : "bg-white text-gray-600 border-gray-200 hover:border-[#C9A84C] hover:text-[#C9A84C]"
+                      ? "bg-[#1A1A2E] text-white border-[#1A1A2E]"
+                      : "bg-white text-gray-600 border-gray-200 hover:border-[#D4A843] hover:text-[#D4A843]"
                   }`}
                 >
                   {cat}
@@ -204,7 +204,7 @@ export default async function ArticlesPage({ searchParams }: ArticlesPageProps) 
             ) : (
               <div className="text-center py-16">
                 <p className="text-gray-400 text-lg">No articles found in this category yet.</p>
-                <a href="/articles" className="mt-4 inline-block text-[#C9A84C] font-semibold hover:underline">
+                <a href="/articles" className="mt-4 inline-block text-[#D4A843] font-semibold hover:underline">
                   View all articles
                 </a>
               </div>
@@ -218,7 +218,7 @@ export default async function ArticlesPage({ searchParams }: ArticlesPageProps) 
 
               {/* Browse by category */}
               <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
-                <h3 className="font-bold text-[#0F1E3D] text-sm uppercase tracking-wider mb-4">
+                <h3 className="font-bold text-[#1A1A2E] text-sm uppercase tracking-wider mb-4">
                   Browse by Category
                 </h3>
                 <ul className="space-y-2">
@@ -228,7 +228,7 @@ export default async function ArticlesPage({ searchParams }: ArticlesPageProps) 
                       <li key={cat}>
                         <a
                           href={`/articles?category=${cat}`}
-                          className="flex items-center justify-between text-sm text-gray-600 hover:text-[#C9A84C] transition-colors py-1"
+                          className="flex items-center justify-between text-sm text-gray-600 hover:text-[#D4A843] transition-colors py-1"
                         >
                           <span>{cat}</span>
                           <span className="text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">
