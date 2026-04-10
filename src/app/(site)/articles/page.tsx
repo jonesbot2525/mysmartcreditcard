@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import ArticleCard from "@/components/ArticleCard";
 import AdBanner from "@/components/AdBanner";
 import { getArticles, type Article } from "@/lib/sanity";
+import { FALLBACK_ARTICLES } from "@/lib/fallback-data";
 
 export const revalidate = 3600;
 
@@ -13,108 +14,6 @@ export const metadata: Metadata = {
 };
 
 const CATEGORIES = ["All", "Travel", "Rewards", "Beginners", "Delta", "Couples"] as const;
-
-const FALLBACK_ARTICLES: Article[] = [
-  {
-    _id: "1",
-    _createdAt: "2024-01-15",
-    title: "The Best Travel Credit Cards of 2024: Our Top Picks",
-    slug: { current: "best-travel-credit-cards-2024" },
-    category: "Travel",
-    excerpt:
-      "From sign-up bonuses to lounge access, we break down the top travel cards that will transform how you fly.",
-    publishedAt: "2024-01-15",
-    featured: true,
-  },
-  {
-    _id: "2",
-    _createdAt: "2024-01-10",
-    title: "How to Maximize Your Chase Ultimate Rewards Points",
-    slug: { current: "maximize-chase-ultimate-rewards" },
-    category: "Rewards",
-    excerpt:
-      "Learn the insider strategies to get 2x, 3x, and even 5x value from your Chase points with transfer partners.",
-    publishedAt: "2024-01-10",
-    featured: true,
-  },
-  {
-    _id: "3",
-    _createdAt: "2024-01-05",
-    title: "Credit Cards for Beginners: Where to Start",
-    slug: { current: "credit-cards-for-beginners" },
-    category: "Beginners",
-    excerpt:
-      "New to travel rewards? Here's the step-by-step guide to building your card portfolio the smart way.",
-    publishedAt: "2024-01-05",
-    featured: true,
-  },
-  {
-    _id: "4",
-    _createdAt: "2023-12-28",
-    title: "Delta SkyMiles Cards: Which One Is Right for You?",
-    slug: { current: "delta-skymiles-cards-comparison" },
-    category: "Delta",
-    excerpt:
-      "The Gold, Platinum, and Reserve all have their place. Here's how to choose based on how often you fly Delta.",
-    publishedAt: "2023-12-28",
-    featured: true,
-  },
-  {
-    _id: "5",
-    _createdAt: "2023-12-20",
-    title: "The Best Credit Cards for Couples Traveling Together",
-    slug: { current: "best-credit-cards-for-couples" },
-    category: "Couples",
-    excerpt:
-      "Two people, two cards, one amazing trip. Pair your cards to maximize every dollar you spend together.",
-    publishedAt: "2023-12-20",
-    featured: true,
-  },
-  {
-    _id: "6",
-    _createdAt: "2023-12-15",
-    title: "Airport Lounge Access: The Complete Guide",
-    slug: { current: "airport-lounge-access-guide" },
-    category: "Travel",
-    excerpt:
-      "Priority Pass, Centurion Lounges, Delta Sky Club — which cards get you in, and is it worth the annual fee?",
-    publishedAt: "2023-12-15",
-    featured: true,
-  },
-  {
-    _id: "7",
-    _createdAt: "2023-12-10",
-    title: "Amex Membership Rewards: A Complete Transfer Partner Guide",
-    slug: { current: "amex-membership-rewards-transfer-partners" },
-    category: "Rewards",
-    excerpt:
-      "Not all transfer partners are created equal. Here's how to pick the right ones for outsized value on your Amex points.",
-    publishedAt: "2023-12-10",
-    featured: false,
-  },
-  {
-    _id: "8",
-    _createdAt: "2023-12-05",
-    title: "How to Book International Business Class Using Points",
-    slug: { current: "book-international-business-class-with-points" },
-    category: "Travel",
-    excerpt:
-      "Business class doesn't have to cost $8,000. Here's the playbook for using miles to fly flat-bed across the Atlantic.",
-    publishedAt: "2023-12-05",
-    featured: false,
-  },
-  {
-    _id: "9",
-    _createdAt: "2023-11-28",
-    title: "The 5/24 Rule Explained: What Chase Cardholders Need to Know",
-    slug: { current: "chase-5-24-rule-explained" },
-    category: "Beginners",
-    excerpt:
-      "Chase's infamous 5/24 rule can derail your points strategy. Here's everything you need to know to plan around it.",
-    publishedAt: "2023-11-28",
-    featured: false,
-  },
-];
 
 interface ArticlesPageProps {
   searchParams: Promise<{ category?: string }>;

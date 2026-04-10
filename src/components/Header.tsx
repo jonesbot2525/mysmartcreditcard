@@ -7,8 +7,8 @@ import { useState } from "react";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/articles", label: "Articles" },
+  { href: "/cards", label: "Best Cards" },
   { href: "/about", label: "About" },
-  { href: "/disclaimer", label: "Disclaimer" },
 ];
 
 export default function Header() {
@@ -42,7 +42,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/articles"
+              href="/cards"
               className="ml-3 px-4 py-2 text-sm font-semibold bg-[#2D7DD2] text-white rounded-lg hover:bg-[#1A5FA8] transition-colors"
             >
               Best Cards →
