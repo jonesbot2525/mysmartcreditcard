@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0F1E3D;
+  --gold: #C9A84C;
+  --gold-light: #E8C97A;
+  --background: #ffffff;
+  --foreground: #1a1a2e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--navy);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-playfair);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair, Georgia, serif);
+}
+
+/* Portable Text body styles */
+.prose-article h2 {
+  font-family: var(--font-playfair, Georgia, serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--navy);
+}
+
+.prose-article h3 {
+  font-family: var(--font-playfair, Georgia, serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--navy);
+}
+
+.prose-article p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+  color: #374151;
+}
+
+.prose-article ul,
+.prose-article ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose-article li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.prose-article ul li {
+  list-style-type: disc;
+}
+
+.prose-article ol li {
+  list-style-type: decimal;
+}
+
+.prose-article a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-article a:hover {
+  color: var(--navy);
+}
+
+.prose-article strong {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.prose-article blockquote {
+  border-left: 4px solid var(--gold);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #6b7280;
+}
