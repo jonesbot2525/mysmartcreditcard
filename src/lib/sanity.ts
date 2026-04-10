@@ -3,9 +3,12 @@ import { createImageUrlBuilder as imageUrlBuilder } from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url";
 import type { PortableTextBlock } from "@portabletext/react";
 
+const projectId = (process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? "placeholder").trim();
+const dataset = (process.env.NEXT_PUBLIC_SANITY_DATASET ?? "production").trim().toLowerCase() || "production";
+
 export const client = createClient({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? "placeholder",
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET ?? "production",
+  projectId,
+  dataset,
   apiVersion: "2024-01-01",
   useCdn: true,
 });
